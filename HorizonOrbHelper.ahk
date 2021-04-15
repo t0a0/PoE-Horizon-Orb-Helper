@@ -3,6 +3,7 @@
 global mouseX := 0
 global mouseY := 0
 global SHAPER_MAPS := ["Pit of the Chimera", "Maze of the Minotaur", "Lair of the Hydra", "Forge of the Phoenix"]
+global REGIONS := ["Glennach Cairns", "Haewark Hamlet", "Lex Ejoris", "Lex Proxima", "Lira Arthain", "New Vastir", "Tirn's End", "Valdo's Rest"]
 
 CheckMouse()
 {
@@ -34,7 +35,7 @@ HideWindow()
 
 RegionForMap(map)
 {
-	mapRegion := 0
+	mapRegion := 9
 	Loop 8
 	{
 		idx = %A_Index%
@@ -49,40 +50,30 @@ RegionForMap(map)
 			}
 		}
 	}
-	retVal := "Unknown"
-	if mapRegion = 1 
+	return mapRegion
+}
+
+; maps: Array<String>
+; returns: {String: [String]}
+GroupMapsByRegion(maps)
+{
+	groups := []
+	for idx, rgn in REGIONS
 	{
-		retVal := "Glennach Cairns"
-	} 
-	else if mapRegion = 2
-	{
-		retVal := "Haewark Hamlet"
-	} 
-	else if mapRegion = 3 
-	{
-		retVal := "Lex Ejoris"
-	} 
-	else if mapRegion = 4 
-	{
-		retVal := "Lex Proxima"
-	} 
-	else if mapRegion = 5 
-	{
-		retVal := "Lira Arthain"
-	} 
-	else if mapRegion = 6 
-	{
-		retVal := "New Vastir"
-	} 
-	else if mapRegion = 7 
-	{
-		retVal := "Tirn's End"
-	} 
-	else if mapRegion = 8 
-	{
-		retVal := "Valdo's Rest"
+		groups[idx] := ""
 	}
-	return retval
+	for idx, map in maps
+	{
+		mapRegion := RegionForMap(map)
+		grp := groups[mapRegion]
+		if StrLen(grp)
+		{
+			grp := grp . ","
+		}
+		grp := grp . map
+		groups[mapRegion] := grp
+	}
+	return groups
 }
 
 ; tier: Int
@@ -90,18 +81,37 @@ RegionForMap(map)
 ; mapText: String
 ShowWindow(tier, maps, mapText)
 {
-	HideWindow()
-	; joined := Join("`n", maps)
 	Gui, +AlwaysOnTop +Disabled -SysMenu +Owner  ; +Owner avoids a taskbar button.
-	for index, element in maps
+	groups := GroupMapsByRegion(maps)
+	mapNumber := 1
+	padding := 5
+	for regionIdx, mapList in groups
 	{
-		if InStr(mapText, element) {
-			Gui, Font, cFF0000 s15, Verdana
-		} else {
-			Gui, Font, c000000 s15, Verdana
+		if not StrLen(mapList)
+		{
+			continue
 		}
-		mapRegion := RegionForMap(element)
-		Gui, Add, Text, Y+0, %index%. %element% (%mapRegion%)
+		for i, mapName in StrSplit(mapList, ",")
+		{
+			clr := "000000"
+			if InStr(mapText, mapName) 
+			{
+				clr := "FF0000"
+			}
+			Gui, Font, c%clr% s13, Verdana
+			mapRegion := REGIONS[regionIdx]
+			if regionIdx = 9
+			{
+				Gui, Add, Text, Y+%padding%, %mapNumber%. %mapName%
+			}
+			else
+			{
+				Gui, Add, Text, Y+%padding%, %mapNumber%. %mapName% (%mapRegion%)
+			}
+			mapNumber += 1
+			padding := 0
+		}
+		padding := 15
 	}
 	MouseGetPos, xPos, yPos
 	xPos := xPos + 25
