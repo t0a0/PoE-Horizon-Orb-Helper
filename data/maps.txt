@@ -1,0 +1,16 @@
+Arcade,Coves,Jungle Valley,Pen
+Arena,Crater,Defiled Cathedral,Fields,Frozen Cabins,Gardens,Grotto,Infested Valley,Lair,Moon Temple,Peninsula,Promenade,Spider Forest,Sunken City,Tower,Tropical Island,Underground River,Underground Sea,Volcano,Wharf
+Ancient City,Arid Lake,Ashen Wood,Basilica,Belfry,Canyon,Cemetery,Courtyard,Factory,Forking River,Geode,Glacier,Graveyard,Laboratory,Lava Chamber,Mud Geyser,Orchard,Overgrown Ruin,Pier,Plaza,Primordial Blocks,Reef,Shore,Strand,Sulphur Vents,Temple,Toxic Sewer,Vaal Pyramid
+Academy,Arsenal,Bone Crypt,Cage,Channel,Courthouse,Crimson Temple,Crystal Ore,Desert,Dunes,Iceberg,Leyline,Lookout,Marshes,Museum,Precinct,Primordial Pool,Ramparts,Wasteland
+Armoury,Atoll,Carcass,Cells,Chateau,Desert Spring,Haunted Mansion,Lighthouse,Palace,Shrine,Waste Pool
+Malformation,Silo
+Dark Forest,Waterways
+Alleyways,Dry Sea,Racecourse
+Dungeon,Mausoleum,Mineral Pools,Overgrown Shrine,Relic Chambers,Spider Lair,Stagnation
+Forbidden Woods,Ghetto,Phantasmagoria,Scriptorium
+Cold River,Conservatory,Flooded Mine,Fungal Hollow,Grave Trough,Ivory Temple,Port
+Coral Ruins,Crimson Township,Dig,Shipyard,Siege
+Cursed Crypt,Maze,Park,Plateau
+Acid Caverns,Barrows,Beach,Bramble Valley,Caldera,City Square,Colosseum,Core,Excavation,Mesa,Residence,Sepulchre,Thicket
+Arachnid Tomb,Bazaar,Bog,Castle Ruins,Colonnade,Estuary,Foundry,Lava Lake,Summit,Terrace,Vault,Villa
+Arachnid Nest,Burial Chambers,Necropolis,Pit

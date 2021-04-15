@@ -1,0 +1,8 @@
+Arcade,Grotto,Infested Valley,Sunken City,Tower,Tropical Island,Ancient City,Basilica,Graveyard,Lava Chamber,Cage,Iceberg,Museum,The Putrid Cloister,Wasteland,Haunted Mansion,Malformation,Spider Lair,Stagnation,Scriptorium,Plateau,Acid Caverns,Residence,Villa
+Cemetery,Hallowed Ground,Plaza,Channel,Leyline,Ramparts,Atoll,Maelström of Chaos,Palace,Waterways,Fungal Hollow,Grave Trough,Caldera,Core,Excavation,Summit,Terrace,Arachnid Nest
+Forking River,Arsenal,Bone Crypt,Crystal Ore,Olmec's Sanctum,Primordial Pool,Armoury,Cells,Waste Pool,Alleyways,Dungeon,Conservatory,Dig,Beach,Sepulchre,Bog,Burial Chambers
+Jungle Valley,Crater,Defiled Cathedral,Frozen Cabins,Oba's Cursed Trove,Peninsula,Spider Forest,Underground Sea,Volcano,Courtyard,Geode,Glacier,Overgrown Ruin,Reef,Sulphur Vents,The Vinktar Square,Vaal Pyramid,Vaults of Atziri,Academy,Carcass,Acton's Nightmare,Overgrown Shrine,Phantasmagoria,Cold River,Crimson Township,Cursed Crypt,Park,The Coward's Trial,Thicket,Lava Lake,Vaal Temple
+Pier,Primordial Blocks,Toxic Sewer,Courthouse,Lookout,Marshes,Precinct,Lighthouse,Racecourse,Mausoleum,Forbidden Woods,Flooded Mine,Shipyard,Barrows,Castle Ruins,Estuary
+Belfry,Laboratory,Strand,Whakawairua Tuahu,Crimson Temple,Desert,Dunes,Pillars of Arun,Shrine,Relic Chambers,Siege,Colosseum,Arachnid Tomb,Foundry,Vault,Pit
+Coves,Caer Blaidd, Wolfpack's Den,Fields,Moon Temple,The Twilight Temple,Underground River,Wharf,Factory,Mao Kun,Mud Geyser,Poorjoy's Asylum,Shore,Temple,Chateau,Desert Spring,The Perandus Manor,Silo,Port,Coral Ruins,Mesa,Bazaar,Colonnade
+Pen,Arena,Gardens,Lair,Promenade,Arid Lake,Ashen Wood,Canyon,Orchard,Dark Forest,Dry Sea,Mineral Pools,Ghetto,Ivory Temple,Doryani's Machinarium,Maze,Bramble Valley,City Square,Death and Taxes,Necropolis
